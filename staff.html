@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Petal Staff | Petal Flow Labs</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    :root {
+      --staff-accent: #f5a623;
+    }
+    body { background: #050507; }
+    
+    .prop-hero {
+      padding: 140px 0 80px;
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(circle at top right, rgba(245, 166, 35, 0.08) 0%, transparent 60%);
+    }
+
+    .prop-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .prop-media {
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+      border: 1px solid var(--border-glass);
+      box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+      background: #000;
+    }
+
+    .prop-media video, .prop-media img {
+      width: 100%;
+      display: block;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      color: var(--white);
+    }
+    .section-title span { color: var(--staff-accent); }
+
+    .content-block {
+      margin-bottom: 60px;
+    }
+    .content-block p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--white-dim);
+      margin-bottom: 20px;
+    }
+
+    /* Materials Grid */
+    .materials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .material-card {
+      background: var(--bg-card);
+      padding: 30px;
+      border-radius: 20px;
+      border: 1px solid var(--border-glass);
+      transition: var(--transition);
+    }
+    .material-card:hover { border-color: var(--staff-accent); transform: translateY(-5px); }
+    .material-card h4 { color: var(--staff-accent); margin-bottom: 12px; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
+
+    /* Struggles Section */
+    .struggles-box {
+      background: rgba(255, 50, 50, 0.03);
+      border: 1px solid rgba(255, 50, 50, 0.1);
+      padding: 40px;
+      border-radius: 24px;
+      position: relative;
+    }
+    .struggles-box h3 { color: #ff4d4d; }
+
+    .status-banner {
+      background: var(--staff-accent);
+      color: var(--bg-primary);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 1024px) {
+      .prop-grid { grid-template-columns: 1fr; gap: 40px; }
+      .prop-hero { padding: 100px 0 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Petal<span>Flow</span></a>
+      <a href="index.html" class="btn btn--outline btn--sm">← Back to Tools</a>
+    </div>
+  </nav>
+
+  <!-- HERO: THE VISION -->
+  <header class="prop-hero">
+    <div class="container">
+      <div class="prop-grid">
+        <div class="prop-content reveal">
+          <span class="hero__badge">Flagship Prop</span>
+          <h1 class="hero__title" style="font-size: 4rem;">The <span>Petal Staff</span></h1>
+          <p class="hero__desc">
+            The hybrid contact/dragon staff where the architecture of Petal Flow was born. Designed for the intersection of technical rolls and explosive momentum shifts.
+          </p>
+          <div class="status-banner">Ready for Assembly • Early Summer 2026</div>
+        </div>
+        <div class="prop-media reveal">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/PETALSTAFFmodes" autoplay muted loop playsinline></video>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MATERIALS & BUILD -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="content-block reveal">
+        <h2 class="section-title">Built for <span>Impact</span></h2>
+        <p>Every part of the Petal Staff was built from scratch. We didn't use off-the-shelf parts where they didn't belong. We engineered a capsule that protects the brain while allowing the petals to breathe.</p>
+        
+        <div class="materials-grid">
+          <div class="material-card">
+            <h4>Polycarbonate</h4>
+            <p>Industry standard tough. The 1" tubes use long internal overlaps at the 3-piece connection points to eliminate flex during high-speed rolls.</p>
+          </div>
+          <div class="material-card">
+            <h4>Silicone Petals</h4>
+            <p>Custom-molded petals that provide a soft "bloom" and incredible grip. They act as natural dampeners for the LEDs during ground impacts.</p>
+          </div>
+          <div class="material-card">
+            <h4>Direct PCB Link</h4>
+            <p>Zero-wiggle connection. We redesigned the capsule to strengthen the bond between the LED strip and the main board for zero flicker flow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE FEELS & MODES -->
+  <section class="section-pad" style="background: rgba(255,255,255,0.01);">
+    <div class="container">
+      <div class="prop-grid">
+        <div class="prop-media reveal">
+          <img src="https://res.cloudinary.com/dfz5m8dzp/image/upload/v1773513014/doubles.gif" alt="Petal Staff CAD View">
+        </div>
+        <div class="prop-content reveal">
+          <h2 class="section-title">The <span>Momentum</span></h2>
+          <p>The magic isn't just in the lights; it's in the mass. As the petals open, the center of gravity shifts slightly, giving you a physical feedback loop for your spin speed.</p>
+          <p>Weight is perfectly balanced for contact flow, with 3D-printed internal skeletons ensuring the battery weight stays centered in each head.</p>
+          <a href="modes.html" class="btn btn--primary">View Led Logic →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE STRUGGLES -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="struggles-box reveal">
+        <h2 class="section-title">The <span>Struggle</span> to V2</h2>
+        <p>Prototyping this staff wasn't easy. V1 had flexing issues at the joints and the capsules were too hard to take apart for maintenance. We took it apart and put it back together a hundred times.</p>
+        <div class="prop-media" style="max-width: 600px; margin-top: 30px;">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/v1773588232/CADStaff_Capsule_ji1dbw.mp4" autoplay muted loop playsinline></video>
+          <p style="padding: 15px; font-size: 0.8rem; background: #000; margin: 0;">Internal CAD: Redesigning the capsule for the 3-piece stiff overlap.</p>
+        </div>
+        <p style="margin-top:30px;">Today, it's ready. The 3-piece design gives each head its own dedicated battery and motion sensor, remaining stiff while adding portability. It's the kickass demo prop we've always wanted.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-note">
+    <div class="container">
+      <p>&copy; 2026 Petal Flow Labs — Canada</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

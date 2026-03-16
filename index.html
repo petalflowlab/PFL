@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petal Flow Labs — Motion-Reactive LED Flow Props</title>
+  <meta name="description"
+    content="Hand-built LED flow props with mechanical petals that bloom when you spin. Petal Staff V2, Petal Poi, and Petal Sword — motion-reactive, beat-synced, app-controlled." />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">Petal<span>Flow</span></a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#technology">Tech</a></li>
+        <li><a href="#campaign">Campaign</a></li>
+        <li><a href="#specs">Specs</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <video autoplay muted loop playsinline
+        poster="https://res.cloudinary.com/dfz5m8dzp/image/upload/f_auto,q_auto/v1/field"
+        src="https://res.cloudinary.com/dfz5m8dzp/video/upload/v1773530159/slowhero_srg5em.mp4">
+      </video>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <span class="hero__badge">Founder's Edition — Micro-Batch</span>
+      <h1 class="hero__title">Blooming Petal <span>Flow Props:</span></h1>
+      <p class="hero__subtitle">Pick your discipline. Same blooming petals. Same motion-reactive chip. Different forms.
+      </p>
+      <div class="hero__ctas">
+        <a href="#products" class="btn btn--primary">Choose Your Prop</a>
+        <a href="#story" class="btn btn--outline">Read The Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ORIGIN STORY ==================== -->
+  <section class="story section-pad" id="story">
+    <div class="container story__grid">
+      <div class="story__text reveal">
+        <h2>Two years of <span>Movement refined</span></h2>
+        <p>The Petal staff moves better than I could have imagined. For beginners it works amazingly to help in
+          fishtails and for the more advanced tiptails are a treat too.</p>
+        <p>The quick change of styles that the petals allows makes for a fun style. Something was missing. About 140
+          things were missing. <strong>140 MORE LEDS.</strong></p>
+        <div class="story__quotes">
+          <div class="quote-card">
+            <p class="quote-card__text">"I could switch from kung-fu mode to dragon mode on the fly."</p>
+            <span class="quote-card__name">— Spci</span>
+          </div>
+          <div class="quote-card">
+            <p class="quote-card__text">"The ultimate tip tail staff."</p>
+            <span class="quote-card__name">— Radovan</span>
+          </div>
+          <div class="quote-card">
+            <p class="quote-card__text">"Loved the handling."</p>
+            <span class="quote-card__name">— Sarah Laura</span>
+          </div>
+        </div>
+      </div>
+      <div class="story__media reveal" style="display: flex; flex-direction: column; gap: 16px;">
+        <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/20260307_235949" autoplay muted
+          loop playsinline></video>
+        <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/Gardenparty" autoplay muted loop
+          playsinline></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== V2 INTRO ==================== -->
+  <section class="v2intro section-pad" id="v2-intro">
+    <div class="container">
+      <div class="v2intro__header reveal">
+        <span class="hero__badge" style="margin-bottom: 12px;">The Next Step</span>
+        <h2>Meet <span>V2.</span></h2>
+        <p>Two years of hard use led to two years of improvements. Click each feature below to learn what changed — and
+          why it matters.</p>
+      </div>
+
+      <div class="v2intro__grid reveal">
+        <div class="accordion" id="v2-accordion">
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__icon">🛡️</span>
+              <span class="accordion__label">Polycarbonate Tubes</span>
+              <span class="accordion__chevron">›</span>
+            </button>
+            <div class="accordion__body">
+              <p>Industry standard tough. The 3-piece design with long overlaps avoids flexing problems, ensuring the
+                electronics inside stay protected no matter what.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__icon">🔋</span>
+              <span class="accordion__label">All-Night Battery</span>
+              <span class="accordion__chevron">›</span>
+            </button>
+            <div class="accordion__body">
+              <p>More LEDs meant more power drain, so a full-size 18650 battery was chosen to add weight and provide
+                enough power. Our target is at least 10 hours of flow on a charge — USB-C charging won't be needed til
+                morning.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__icon">🧬</span>
+              <span class="accordion__label">Silicone-Molded Petals</span>
+              <span class="accordion__chevron">›</span>
+            </button>
+            <div class="accordion__body">
+              <p>The petals have endured over two years of use, though the largest ones were always a struggle to
+                survive the hard life of smashing on the ground. Silicone molded petals improve strength significantly
+                so you won't need to worry anymore.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__icon">📡</span>
+              <span class="accordion__label">Motion-Sensitive LEDs</span>
+              <span class="accordion__chevron">›</span>
+            </button>
+            <div class="accordion__body">
+              <p>A custom PCB with a 3-axis accelerometer and gyroscope tracks your exact speed, tilt, and rotation in
+                real time. The LEDs respond to what you're actually doing — not a preset loop. Fast spin triggers a
+                bloom. A slow roll closes it back down. It knows the difference.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__icon">🎵</span>
+              <span class="accordion__label">Sound-Reactive Mode</span>
+              <span class="accordion__chevron">›</span>
+            </button>
+            <div class="accordion__body">
+              <p>A built-in microphone syncs the LEDs to the music around you in real time. Beat drops trigger flashes,
+                pulses, and reactive waves across the full LED strip. Dial the sensitivity through the app and let the
+                room control your lights.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="v2intro__video">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/v1773511834/CcutPetalstaff1.mp4" autoplay muted
+            loop playsinline></video>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="v2 section-pad" id="why-this-campaign">
+    <div class="container">
+      <div class="v2__header reveal" style="max-width: 800px; margin: 0 auto; text-align: left;">
+        <h2 style="text-align: center;">What Is This <span>Kickstarter Campaign Structure?</span></h2>
+
+        <p style="text-align: left; margin-top: 24px; color: var(--white); font-size: 1.05rem; line-height: 1.6;">
+          These are completely custom-built props — from the petal head design to the electronics to final assembly.
+          Every part of it came from scratch. During prototyping, they've been taken apart and put back together again
+          and again, which makes a kickass demo prop but unsuitable for your hands.
+        </p>
+
+        <p style="text-align: left; margin-top: 16px; color: var(--white-dim); font-size: 1rem; line-height: 1.6;">
+          From prototype to final durable reliable staff needs two dramatic changes. Redesigned PCB layout to strengthen
+          LED attachment point and stronger silicone molded Big Flower Staff Petals.
+          . All components from previous capsule is remaining the same, only the aforenentioned structural
+          changes are being made so the year of testing still holds up. </p>
+
+        <ul style="list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 16px;">
+          <li style="display: flex; gap: 12px; align-items: start; color: var(--white);">
+            <span style="color: var(--accent); font-weight: bold;">1.</span>
+            <span><strong>Direct PCB Connection</strong> — Strengthened connection of LED strip to board for zero wiggle (fixing V1 wiggles).</span>
+          </li>
+          <li style="display: flex; gap: 12px; align-items: start; color: var(--white);">
+            <span style="color: var(--accent); font-weight: bold;">2.</span>
+            <span><strong>Silicone Molded Petals</strong> — Superior strength to guaranteed they survive the hard life of drops (fixing prototype casualties).</span>
+          </li>
+          <li style="display: flex; gap: 12px; align-items: start; color: var(--white);">
+            <span style="color: var(--accent); font-weight: bold;">3.</span>
+            <span><strong>3-Piece Design</strong> — Remaining stiff using polycarbonate overlap while adding portability and independent battery/sensor tracking.</span>
+          </li>
+        </ul>
+
+
+        <div style="border-top: 1px solid rgba(255,255,255,.1); padding-top: 40px;">
+          <h3
+            style="color: var(--accent); margin-bottom: 24px; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; text-align: center;">
+            The Hierarchy of Readiness</h3>
+
+          <div class="v2-hierarchy-featured reveal" style="margin-bottom: 28px;">
+            <div class="v2-card v2-card--featured"
+              style="position: relative; overflow: hidden; min-height: 280px; display: flex; flex-direction: column; justify-content: center;">
+              <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/v1773588232/CADStaff_Capsule_ji1dbw.mp4"
+                autoplay muted loop playsinline
+                style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.35; z-index: 0;"></video>
+              <div style="position: relative; z-index: 1;">
+                <div class="v2-card__icon">⚔️</div>
+                <h3 class="v2-card__title">Petal Staff</h3>
+                <p style="color: var(--accent); font-weight: 700; font-size: 0.8rem; margin-bottom: 8px; text-transform: uppercase;">READY FOR EARLY SUMMER 2026</p>
+                <p class="v2-card__desc" style="max-width: 500px; margin: 0 auto;">Refined over two years. Ready for assembly and shipping.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="v2__grid reveal">
+            <div class="v2-card">
+              <div class="v2-card__icon">🗡️</div>
+              <h3 class="v2-card__title">Petal Sword</h3>
+              <p style="color: var(--accent); font-weight: 700; font-size: 0.8rem; margin-bottom: 8px; text-transform: uppercase;">READY FOR SUMMER</p>
+              <p class="v2-card__desc">Robust, simple, and next in line for shipping.</p>
+            </div>
+            <div class="v2-card">
+              <div class="v2-card__icon">⏳</div>
+              <h3 class="v2-card__title">Petal Poi</h3>
+              <p style="color: var(--accent); font-weight: 700; font-size: 0.8rem; margin-bottom: 8px; text-transform: uppercase;">READY FOR LATE SUMMER OCTOBER</p>
+              <p class="v2-card__desc">Still requires fine-tuning and thorough refinement.</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="background: rgba(var(--accent-rgb), 0.1); border: 1px solid var(--accent); padding: 24px; border-radius: 12px; margin-top: 48px; text-align: center;">
+          <p style="color: var(--white); font-size: 1.1rem; line-height: 1.6; font-weight: 500;">
+            All these options are available to kickstart this summer. I'm working hard on making the LEDs flow with you
+            so you can stun your friends in the flow space this season.
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== PRODUCTS ==================== -->
+  <section class="products section-pad" id="products">
+    <div class="container">
+      <div class="products__header reveal">
+        <h2>What's <span>Available</span></h2>
+        <p>Pick your discipline. Three tiers. Different levels of availability — grab what you actually spin.</p>
+      </div>
+
+      <!-- ── TIER 1: STAFFS ── -->
+      <div class="tier reveal" id="tier-staff">
+        <div class="tier__label">
+          <span class="tier__badge tier__badge--ready">✦ Ready Now</span>
+          <h3 class="tier__title">Petal Staff</h3>
+          <p class="tier__desc">The most tested props in the lineup — full-size and doubles both available. Robust,
+            proven, and shipping this summer.</p>
+        </div>
+        <div class="products__grid">
+
+          <!-- PETAL STAFF V2 -->
+          <article class="product-card reveal" id="product-staff">
+            <div class="product-card__media">
+              <img src="https://res.cloudinary.com/dfz5m8dzp/image/upload/f_auto,q_auto/v1/Renderstaffhead"
+                alt="Petal Staff V2" />
+              <div class="product-card__video-overlay">
+                <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/PETALSTAFFmodes" autoplay
+                  muted loop playsinline></video>
+              </div>
+              <span class="product-card__badge">Full Size</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Petal Staff V2</h3>
+              <p class="product-card__desc">The hybrid contact/dragon staff where this all started. Slow rolls keep
+                petals closed. Hard spins bloom them open. Physics decides. Breaks down into 3 pieces for travel.</p>
+              <ul class="product-card__specs">
+                <li>2 capsules, full-length LEDs</li>
+                <li>Motion-reactive, beat-synced, app-controlled</li>
+                <li>USB-C rechargeable</li>
+              </ul>
+              <div class="product-card__footer">
+                <div class="product-card__price">$849 <small>CAD</small></div>
+                <span class="product-card__avail">3 available</span>
+              </div>
+              <a href="staff.html" class="btn btn--outline btn--sm" style="margin-top: 20px; width: 100%;">Learn More Detail →</a>
+            </div>
+          </article>
+
+          <!-- DOUBLES STAFF -->
+          <article class="product-card reveal" id="product-doubles">
+            <div class="product-card__media">
+              <img src="https://res.cloudinary.com/dfz5m8dzp/image/upload/v1773513014/doubles.gif"
+                alt="Petal Doubles Staff" />
+              <span class="product-card__badge">Doubles</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Petal Doubles Staff</h3>
+              <p class="product-card__desc">Compact doubles staffs — same petal mechanism in a shorter form built for
+                fast hand-to-hand tech and double staff patterns. More agile, same bloom.</p>
+              <ul class="product-card__specs">
+                <li>2 staffs, synchronized LEDs</li>
+                <li>Motion-reactive, beat-synced</li>
+                <li>USB-C rechargeable</li>
+              </ul>
+              <div class="product-card__footer">
+                <div class="product-card__price">$649 <small>CAD</small></div>
+                <span class="product-card__avail">2 pairs available</span>
+              </div>
+              <a href="staff.html" class="btn btn--outline btn--sm" style="margin-top: 20px; width: 100%;">Learn More Detail →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ── TIER 2: SWORDS ── -->
+      <div class="tier reveal" id="tier-sword">
+        <div class="tier__label">
+          <span class="tier__badge tier__badge--ready">✦ Ready Now</span>
+          <h3 class="tier__title">Petal Sword</h3>
+          <p class="tier__desc">Robust, tested, and ready to ship. The petal mechanism translates perfectly to contact
+            sword flow — weight shifts with every bloom.</p>
+        </div>
+        <div class="products__grid">
+
+          <!-- PETAL SWORD SINGLE -->
+          <article class="product-card reveal" id="product-sword">
+            <div class="product-card__media">
+              <img
+                src="https://res.cloudinary.com/dfz5m8dzp/image/upload/f_auto,q_auto/v1773527087/contact_sword_br0klu.png"
+                alt="Petal Contact Sword CAD" style="object-fit: contain; background: #111;" />
+              <div class="product-card__video-overlay">
+                <video
+                  src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/lv_0_20260313220441_vln4ry"
+                  autoplay muted loop playsinline></video>
+              </div>
+              <span class="product-card__badge">Single</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Petal Sword (Single)</h3>
+              <p class="product-card__desc">Full-size contact sword. As the petals open and close, the weight shifts —
+                gives you precise control over momentum.</p>
+              <ul class="product-card__specs">
+                <li>1 capsule, full LED coverage</li>
+                <li>Motion-reactive, beat-synced</li>
+              </ul>
+              <div class="product-card__footer">
+                <div class="product-card__price">$549 <small>CAD</small></div>
+                <span class="product-card__avail">2 available</span>
+              </div>
+              <a href="sword.html" class="btn btn--outline btn--sm" style="margin-top: 20px; width: 100%;">Learn More Detail →</a>
+            </div>
+          </article>
+
+          <!-- PETAL SWORDS PAIR -->
+          <article class="product-card reveal" id="product-swords-pair">
+            <div class="product-card__media">
+              <img
+                src="https://res.cloudinary.com/dfz5m8dzp/image/upload/f_auto,q_auto/v1773208164/Screenshot_2025-10-22_164109_b6npii.png"
+                alt="Petal Swords Pair CAD" style="object-fit: contain; background: #111;" />
+              <div class="product-card__video-overlay">
+                <video
+                  src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/lv_0_20260313220441_vln4ry"
+                  autoplay muted loop playsinline></video>
+              </div>
+              <span class="product-card__badge">Pair</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Petal Swords (Pair)</h3>
+              <p class="product-card__desc">Compact paired swords for fast tech flow. Petals bloom differently on
+                smaller props — quick bursts that match double sword energy.</p>
+              <ul class="product-card__specs">
+                <li>2 swords, synchronized LEDs</li>
+                <li>Motion-reactive tech</li>
+              </ul>
+              <div class="product-card__footer">
+                <div class="product-card__price">$649 <small>CAD</small></div>
+                <span class="product-card__avail">2 pairs available</span>
+              </div>
+              <a href="sword.html" class="btn btn--outline btn--sm" style="margin-top: 20px; width: 100%;">Learn More Detail →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ── TIER 3: POI ── -->
+      <div class="tier tier--soon reveal" id="tier-poi">
+        <div class="tier__label">
+          <span class="tier__badge tier__badge--soon">⏳ Coming Late Summer</span>
+          <h3 class="tier__title">Petal Poi</h3>
+          <p class="tier__desc">The poi version is still being refined. It's close — but "close" isn't ready. Expect
+            availability late summer. Reserve your spot now.</p>
+        </div>
+        <div class="products__grid">
+
+          <!-- PETAL POI PAIR -->
+          <article class="product-card product-card--soon reveal" id="product-poi-pair">
+            <div class="product-card__media">
+              <img src="https://res.cloudinary.com/dfz5m8dzp/image/upload/f_auto,q_auto/v1/Rednerpoi"
+                alt="Petal Poi Pair" />
+              <div class="product-card__video-overlay">
+                <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/poi" autoplay muted loop
+                  playsinline></video>
+              </div>
+              <span class="product-card__badge">Pair</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Petal Poi (Pair)</h3>
+              <p class="product-card__desc">Fast poi spins make the petals bloom and shift momentum mid-throw. Motion
+                tracking makes LEDs respond to your actual patterns, not some preset loop.</p>
+              <ul class="product-card__specs">
+                <li>2 poi, full motion-reactive LEDs</li>
+                <li>Beat detection, app control</li>
+              </ul>
+              <div class="product-card__footer">
+                <div class="product-card__price">$399 <small>CAD</small></div>
+                <span class="product-card__avail" style="color: var(--white-muted);">Late Summer</span>
+              </div>
+              <a href="poi.html" class="btn btn--outline btn--sm" style="margin-top: 20px; width: 100%;">Learn More Detail →</a>
+            </div>
+          </article>
+
+          <!-- PETAL POI TRIPLE -->
+          <article class="product-card product-card--soon reveal" id="product-poi-triple">
+            <div class="product-card__media">
+              <img src="https://res.cloudinary.com/dfz5m8dzp/image/upload/f_auto,q_auto/v1/Rednerpoi"
+                alt="Petal Poi Triple Set" style="filter: hue-rotate(45deg);" />
+              <div class="product-card__video-overlay">
+                <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/poi" autoplay muted loop
+                  playsinline></video>
+              </div>
+              <span class="product-card__badge">Triple</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Petal Poi (Triple Set)</h3>
+              <p class="product-card__desc">For 3-poi juggling and patterns. Get an extra poi to match your double set
+                so you can juggle with fully motion-reactive tech.</p>
+              <ul class="product-card__specs">
+                <li>3 poi, same motion-reactive tech</li>
+                <li>Beat detection, app control</li>
+              </ul>
+              <div class="product-card__footer">
+                <div class="product-card__price">$549 <small>CAD</small><br><span
+                    style="font-size:0.65rem;color:var(--success);">(Save $50)</span></div>
+                <span class="product-card__avail" style="color: var(--white-muted);">Late Summer</span>
+              </div>
+              <a href="poi.html" class="btn btn--outline btn--sm" style="margin-top: 20px; width: 100%;">Learn More Detail →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== EARLY PRICING MATTERS ==================== -->
+  <section class="bundle section-pad" id="early-pricing">
+    <div class="container">
+      <div class="bundle__card reveal"
+        style="grid-template-columns: 1fr; text-align: center; max-width: 800px; margin: 0 auto;">
+        <div class="bundle__info">
+          <h2>Why Early Pricing <span>Matters</span></h2>
+          <p class="bundle__tagline">This micro-batch is intentionally priced to get these props into the hands of flow
+            artists who'll appreciate them, not to make profit.</p>
+          <p class="bundle__desc">You're getting:</p>
+          <ul class="bundle__includes"
+            style="display:inline-block; text-align: left; margin: 0 auto 32px; max-width: 500px;">
+            <li>Full motion-reactive LED system</li>
+            <li>Real-time tracking that responds to your actual movement</li>
+            <li>Beat detection and app control</li>
+            <li>Professional-grade components</li>
+            <li>Hand-assembled and personally tested</li>
+          </ul>
+          <p class="bundle__desc" style="color:var(--accent); font-weight: 600;">At early backer pricing.</p>
+          
+          <!-- FOUNDER'S PERK CALLOUT -->
+          <div style="background: rgba(245, 166, 35, 0.1); border: 1px solid var(--accent); padding: 20px; border-radius: 12px; margin: 24px auto; max-width: 500px;">
+            <p style="color: var(--white); font-weight: 700; font-size: 1.1rem; margin-bottom: 8px;">🎁 THE FOUNDER'S PERK</p>
+            <p style="color: var(--white-dim); font-size: 0.9rem; line-height: 1.5;">
+              Your custom mode, however you want it. Choose colors, behavior, whatever you'd like and <strong>be a part of all staffs in the future.</strong>
+            </p>
+          </div>
+
+          <p class="bundle__desc">When I scale up production later, these features at this price point won't exist. This
+            batch funds the chip order and gets the best version out first.</p>
+          <a href="#products" class="btn btn--primary">Pick Your Discipline. Get In Early.</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TECHNOLOGY ==================== -->
+  <section class="tech section-pad" id="technology">
+    <div class="container">
+      <div class="tech__header reveal">
+        <h2>In every <span>Petal Prop.</span></h2>
+      </div>
+
+      <div class="tech__showcase reveal">
+        <div class="tech__visual" style="display: flex; flex-direction: column; align-items: center; gap: 24px;">
+          <img src="https://res.cloudinary.com/dfz5m8dzp/image/upload/v1773511779/unnamed.jpg"
+            alt="Petal Flow control app interface"
+            style="max-height: 500px; object-fit: contain; background: #000; border-radius: 24px; border: 4px solid #222;" />
+          <a href="modes.html" class="btn btn--primary">🚀 Explore Page 1 Modes</a>
+        </div>
+        <div class="tech__visual">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/RENDER" autoplay muted loop
+            playsinline></video>
+        </div>
+      </div>
+
+      <div class="tech__features reveal">
+        <div class="tech-feature">
+          <div class="tech-feature__icon">🌸</div>
+          <h3 class="tech-feature__title">Mechanical Petals</h3>
+          <p class="tech-feature__desc">Open with centrifugal force. Close when you slow down. No buttons—just spin.</p>
+        </div>
+        <div class="tech-feature">
+          <div class="tech-feature__icon">📡</div>
+          <h3 class="tech-feature__title">Real-Time Motion Tracking</h3>
+          <p class="tech-feature__desc">Accelerometer and gyroscope track your speed, tilt, and rotation. LEDs respond
+            to what you're actually doing right now, not some pre-programmed pattern.</p>
+        </div>
+        <div class="tech-feature">
+          <div class="tech-feature__icon">🎵</div>
+          <h3 class="tech-feature__title">Sound Reactive</h3>
+          <p class="tech-feature__desc">Built-in mic syncs lights to the music in the room.</p>
+        </div>
+        <div class="tech-feature">
+          <div class="tech-feature__icon">📱</div>
+          <h3 class="tech-feature__title">Bluetooth App</h3>
+          <p class="tech-feature__desc">Customize sensitivity, colors, modes—dial it in to match your style.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== CAMPAIGN ==================== -->
+  <section class="campaign section-pad" id="campaign">
+    <div class="container">
+      <div class="campaign__header reveal">
+        <h2>This Is a <span>Founder's Edition</span></h2>
+        <p>I'm hand-building 5 total units/pairs across all the props. That's it for this batch. Custom PCBs require a
+          minimum order of 10 boards. This campaign funds that chip order and gets these props out by summer at early
+          pricing.</p>
+        <div style="margin-top: 24px;">
+          <a href="https://www.kickstarter.com/projects/your-placeholder-url" class="btn btn--primary" target="_blank"
+            rel="noopener noreferrer">
+            <span style="font-weight: 700; margin-right: 8px;">K</span> Back on Kickstarter
+          </a>
+        </div>
+      </div>
+
+      <div class="campaign__progress reveal">
+        <div class="progress-bar">
+          <div class="progress-bar__fill" id="progressFill"></div>
+        </div>
+        <div class="progress-bar__labels">
+          <span><strong>$0</strong> raised</span>
+          <span>Goal: <strong>$3,500 CAD</strong></span>
+        </div>
+      </div>
+
+      <div class="campaign__breakdown reveal">
+        <div class="breakdown-item">
+          <div class="breakdown-item__amount">$1,200</div>
+          <div class="breakdown-item__label">Custom PCBs<br />(min. 10 boards)</div>
+        </div>
+        <div class="breakdown-item">
+          <div class="breakdown-item__amount">$800</div>
+          <div class="breakdown-item__label">Electronic Components<br />(chips, sensors, LEDs)</div>
+        </div>
+        <div class="breakdown-item">
+          <div class="breakdown-item__amount">$500</div>
+          <div class="breakdown-item__label">Molded Silicone<br />Petals</div>
+        </div>
+        <div class="breakdown-item">
+          <div class="breakdown-item__amount">$400</div>
+          <div class="breakdown-item__label">Polycarbonate Tubes<br />&amp; Hardware</div>
+        </div>
+        <div class="breakdown-item">
+          <div class="breakdown-item__amount">$600</div>
+          <div class="breakdown-item__label">Assembly, Testing<br />&amp; Packaging</div>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top: 64px;">
+        <h3 class="text-center"
+          style="font-family:var(--font-heading);font-weight:600;margin-bottom:32px;font-size:1.2rem;">Timeline — ~5
+          Weeks to First Ship</h3>
+        <div class="timeline-container reveal">
+          <div class="timeline">
+            <div class="timeline__step">
+              <h4>PCB Order &amp; Manufacture</h4>
+              <p>PCB printing and preparation: ~2 weeks.</p>
+            </div>
+            <div class="timeline__step">
+              <h4>Staff Assembly — 2 Weeks</h4>
+              <p>Each staff hand-assembled and individually tested. Staffs finish first — I have the most experience and
+                polish with them with little testing left needed.</p>
+            </div>
+            <div class="timeline__step">
+              <h4>Testing &amp; Finalization</h4>
+              <p>Staff: ~2 weeks. Sword: +1 week (robust by design, minimal extra work). Poi: +3 weeks (more complex
+                process that needs thorough testing and refinement).</p>
+            </div>
+            <div class="timeline__step">
+              <h4>Staff Ships by Summer</h4>
+              <p>Sword ships shortly after. Poi ships late summer to early fall. Updates every 2 weeks with build
+                progress.</p>
+            </div>
+          </div>
+
+          <div class="status-card">
+            <div class="status-card__badge">Engineering Status</div>
+            <h4 class="status-card__title">Refinement Update</h4>
+            <div class="status-card__item">
+              <span class="status-card__icon">✅</span>
+              <div>
+                <strong>Staff & Sword</strong>
+                <p>Fully designed and road-tested for 2+ years. Minimal final finetuning remains.</p>
+              </div>
+            </div>
+            <div class="status-card__item">
+              <span class="status-card__icon">⏳</span>
+              <div>
+                <strong>Petal Poi</strong>
+                <p>Final prototyping stage. Requires thorough refinement and testing before shipping.</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.08);">
+              <h5
+                style="color: var(--accent); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                Prop Priority</h5>
+              <p style="font-size: 0.82rem; color: var(--white-muted); line-height: 1.5;">
+                Shipping priority is given to the <strong>Staff and Sword</strong> as they are fully refined and ready
+                for production. This allows me to focus the final engineering and testing time exclusively on the
+                <strong>Poi</strong> to ensure it meets the same standard before its late summer release.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY ==================== -->
+  <section class="gallery section-pad" id="gallery">
+    <div class="container">
+      <div class="gallery__header reveal">
+        <h2>In <span>Action</span></h2>
+      </div>
+      <div class="gallery__grid reveal">
+        <!-- New Props Collection -->
+        <div class="gallery__item gallery__item--wide" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/CcutPetalstaff1" muted loop
+            playsinline onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+        <div class="gallery__item" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/CcutPetalstaff2" muted loop
+            playsinline onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+        <div class="gallery__item" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/CcutPetalstaff3" muted loop
+            playsinline onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+        <div class="gallery__item gallery__item--wide" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/V2" muted loop
+            playsinline onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+        <div class="gallery__item" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/CcutPetalstaff4" muted loop
+            playsinline onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+        <div class="gallery__item" onclick="openLightbox(this)">
+          <img src="https://res.cloudinary.com/dfz5m8dzp/image/upload/f_auto,q_auto/v1/renderdoublesheads" alt="Petal Doubles CAD Render" />
+        </div>
+        <div class="gallery__item gallery__item--wide" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/dragon" muted loop
+            playsinline onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+        <div class="gallery__item" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/CcutPetalstaff5" muted loop
+            playsinline onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+        <div class="gallery__item" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/CcutPetalstaff7" muted loop
+            playsinline onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+        <div class="gallery__item gallery__item--wide" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/CcutPetalstaff8" muted loop
+            playsinline onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+
+        <!-- Legacy/Action Media -->
+        <div class="gallery__item gallery__item--wide" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/20260307_235949" muted loop
+            playsinline onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+        <div class="gallery__item" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/20260308_000037" muted loop
+            playsinline onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+        <div class="gallery__item" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/20260308_000103" muted loop
+            playsinline onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+        <div class="gallery__item" onclick="openLightbox(this)">
+          <img src="https://res.cloudinary.com/dfz5m8dzp/image/upload/f_auto,q_auto/v1/unnamed" alt="Product photo" />
+        </div>
+        <div class="gallery__item gallery__item--wide" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/rado" muted loop playsinline
+            onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+        <div class="gallery__item gallery__item--image" onclick="openLightbox(this)">
+          <img src="https://res.cloudinary.com/dfz5m8dzp/image/upload/f_auto,q_auto/v1/RednerPetalstaff"
+            alt="Product photo 2" />
+        </div>
+        <div class="gallery__item" onclick="openLightbox(this)">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/lv_0_20260313220441_vln4ry"
+            muted loop playsinline onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SPECS TABLE ==================== -->
+  <section class="specs section-pad" id="specs">
+    <div class="container">
+      <div class="specs__header reveal">
+        <h2>Full <span>Specs</span></h2>
+        <p style="text-align:center; color: var(--white-dim); margin-top: 8px;">All props include: Custom PCB with
+          motion tracking (3-axis accelerometer + gyro), Full RGB LEDs, built-in mic, Bluetooth app control, USB-C
+          recharge, molded silicone petals, and impact-resistant polycarbonate.</p>
+      </div>
+      <div class="reveal" style="overflow-x: auto;">
+        <table class="specs-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Staff V2</th>
+              <th>Poi (pair)</th>
+              <th>Poi (triple)</th>
+              <th>Sword (single)</th>
+              <th>Swords (pair)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Price</td>
+              <td>$849 CAD</td>
+              <td>$399 CAD</td>
+              <td>$549 CAD</td>
+              <td>$549 CAD</td>
+              <td>$649 CAD</td>
+            </tr>
+            <tr>
+              <td>Capsules</td>
+              <td>2</td>
+              <td>2 (1 each)</td>
+              <td>3 (1 each)</td>
+              <td>1</td>
+              <td>2 (1 each)</td>
+            </tr>
+            <tr>
+              <td>Breakdown</td>
+              <td>3-piece</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Available</td>
+              <td>3 units</td>
+              <td>3 pairs</td>
+              <td>2 sets</td>
+              <td>2 units</td>
+              <td>2 pairs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SUPPORTER ==================== -->
+  <section class="bundle section-pad" id="supporter" style="padding-top:0;">
+    <div class="container">
+      <div class="bundle__card reveal"
+        style="grid-template-columns:1fr;text-align:center;max-width:600px;margin:0 auto;padding:48px;">
+        <div class="bundle__info">
+          <h2>Just Want to <span>Support?</span></h2>
+          <p class="bundle__desc">$50 gets you behind-the-scenes build updates and early access to future product
+            launches. Unlimited spots.</p>
+          <a href="#" class="btn btn--outline">Back for $50</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">Petal<span>Flow</span> Labs</div>
+        <p class="footer__text">Hand-built in Canada. Founder's Edition — limited run.</p>
+      </div>
+      <ul class="footer__links">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#technology">Tech</a></li>
+        <li><a href="#campaign">Campaign</a></li>
+        <li><a href="#specs">Specs</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ==================== LIGHTBOX ==================== -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <div id="lightboxContent"></div>
+  </div>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script>
+    /* --- Mobile nav toggle --- */
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    /* --- Scroll-reveal --- */
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => revealObserver.observe(el));
+
+    /* --- Progress bar animation --- */
+    const progressFill = document.getElementById('progressFill');
+    const progressObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          progressFill.style.width = '0%';
+          progressObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    if (progressFill) progressObserver.observe(progressFill);
+
+    /* --- Lightbox --- */
+    function openLightbox(el) {
+      const lb = document.getElementById('lightbox');
+      const content = document.getElementById('lightboxContent');
+      const video = el.querySelector('video');
+      const img = el.querySelector('img');
+      if (video) {
+        const v = document.createElement('video');
+        v.src = video.src;
+        v.controls = true;
+        v.autoplay = true;
+        v.style.maxWidth = '90vw';
+        v.style.maxHeight = '85vh';
+        v.style.borderRadius = '10px';
+        content.innerHTML = '';
+        content.appendChild(v);
+      } else if (img) {
+        content.innerHTML = `<img src="${img.src}" alt="${img.alt}" style="max-width:90vw;max-height:85vh;border-radius:10px;" />`;
+      }
+      lb.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      const lb = document.getElementById('lightbox');
+      lb.classList.remove('active');
+      const content = document.getElementById('lightboxContent');
+      const v = content.querySelector('video');
+      if (v) v.pause();
+      content.innerHTML = '';
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+    /* --- Smooth scroll offset for fixed nav --- */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const offset = 70;
+          const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+    /* --- Accordion --- */
+    document.querySelectorAll('.accordion__trigger').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.accordion__item');
+        const isOpen = item.classList.contains('is-open');
+        // close all others
+        document.querySelectorAll('.accordion__item.is-open').forEach(el => {
+          el.classList.remove('is-open');
+          el.querySelector('.accordion__trigger').setAttribute('aria-expanded', 'false');
+        });
+        // toggle clicked
+        if (!isOpen) {
+          item.classList.add('is-open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
