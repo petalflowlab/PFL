@@ -501,12 +501,20 @@ a:hover { color: var(--white); }
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--accent);
+  display: flex;
+  flex-direction: column;
+}
+.product-card__price--original {
+  font-size: 0.85rem;
+  color: var(--white-muted);
+  text-decoration: line-through;
+  font-weight: 400;
+  margin-bottom: 2px;
 }
 .product-card__price small {
   font-size: .7rem;
   font-weight: 400;
   color: var(--white-muted);
-  display: block;
 }
 .product-card__avail {
   font-size: .72rem;
