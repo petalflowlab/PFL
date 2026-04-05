@@ -125,7 +125,7 @@
           <div class="status-banner">Ready for Assembly • Early Summer 2026</div>
         </div>
         <div class="prop-media reveal">
-          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/PETALSTAFFmodes" autoplay muted loop playsinline></video>
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/q_auto,f_auto,vc_auto/v1774726210/lv_0_20260327223635_1_eaifeq.mp4" autoplay muted loop playsinline></video>
         </div>
       </div>
     </div>
@@ -141,7 +141,7 @@
         <div class="materials-grid">
           <div class="material-card">
             <h4>Polycarbonate</h4>
-            <p>Industry standard tough. The 1" tubes use long internal overlaps at the 3-piece connection points to eliminate flex during high-speed rolls.</p>
+            <p>Industry standard tough. The 3-piece clear and strong polycarbonate tubes with long overlaps avoids flexing problems. Hard drops are well protected.</p>
           </div>
           <div class="material-card">
             <h4>Silicone Petals</h4>
@@ -161,12 +161,13 @@
     <div class="container">
       <div class="prop-grid">
         <div class="prop-media reveal">
-          <img src="https://res.cloudinary.com/dfz5m8dzp/image/upload/v1773513014/doubles.gif" alt="Petal Staff CAD View">
+          <img src="https://res.cloudinary.com/dfz5m8dzp/image/upload/q_auto,f_auto/v1773513014/doubles.gif" alt="Petal Staff CAD View">
         </div>
         <div class="prop-content reveal">
           <h2 class="section-title">The <span>Momentum</span></h2>
           <p>The magic isn't just in the lights; it's in the mass. As the petals open, the center of gravity shifts slightly, giving you a physical feedback loop for your spin speed.</p>
           <p>Weight is perfectly balanced for contact flow, with 3D-printed internal skeletons ensuring the battery weight stays centered in each head.</p>
+          <p>Currently features 32 special movement-reactive modes and fully customizable color palettes from bluetooth app. From martial arts combat sequences to fluid contact rolls, you can dial in the exact aesthetic and behavior to match your flow style.</p>
           <a href="modes.html" class="btn btn--primary">View Led Logic →</a>
         </div>
       </div>
@@ -177,13 +178,45 @@
   <section class="section-pad">
     <div class="container">
       <div class="struggles-box reveal">
-        <h2 class="section-title">The <span>Struggle</span> to V2</h2>
-        <p>Prototyping this staff wasn't easy. V1 had flexing issues at the joints and the capsules were too hard to take apart for maintenance. We took it apart and put it back together a hundred times.</p>
-        <div class="prop-media" style="max-width: 600px; margin-top: 30px;">
-          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/v1773588232/CADStaff_Capsule_ji1dbw.mp4" autoplay muted loop playsinline></video>
-          <p style="padding: 15px; font-size: 0.8rem; background: #000; margin: 0;">Internal CAD: Redesigning the capsule for the 3-piece stiff overlap.</p>
+        <h2 class="section-title">The Struggles of a <span>1st Gen Staff</span></h2>
+        <p>Two years of abuse from the V1 revealed all the weak points to make the V2 a much better flow partner than ever.</p>
+
+        <h3 style="color: var(--staff-accent); margin-top: 40px; margin-bottom: 16px; font-size: 1.5rem;">The Big One: Petal Durability</h3>
+        <p>The 3D printed petals have held up beautifully — smashes, drops, contact staff abuse, poi life — they've taken it all but larger dragon petals are a different story. For some spinners they've met their breaking point, which was always the risk with that size.</p>
+        <p>The good news? They're easily swapped out. But for V2 I'm looking to survive it all. Silicone molded petals will be necessary. More robust, more reliable, and built to keep up with the hard knock life of a flow prop.</p>
+
+        <h3 style="color: var(--staff-accent); margin-top: 40px; margin-bottom: 16px; font-size: 1.5rem;">The Path to Full LED Motion</h3>
+        <p>A custom PCB with a 3-axis accelerometer and gyroscope tracks your exact speed, tilt, and rotation in real time. The LEDs respond to what you're actually doing — not a preset loop. Fast spin triggers a bloom. A slow roll closes it back down. It knows the difference.</p>
+        <p>Testing has revealed only minor issues but great durability on impacts. Layout needs a slight revision and with a complete rework of LED connection point was needed to keep the LEDS secure and wiggle free.</p>
+
+        <div style="margin-left: 20px; padding-left: 20px; border-left: 2px solid rgba(255,255,255,0.1); margin-top: 24px;">
+          <h4 style="color: var(--white); margin-bottom: 12px; font-size: 1.1rem;">Motion Tracking</h4>
+          <p>A 3 piece design was needed. This helped with the motion tracking with a sensor on both ends, portability, and battery life/size. Every motion LED mode needs a bit of time for calibration still to make it smooth and really reactive. Super responsive LED motion is the goal.</p>
+
+          <h4 style="color: var(--white); margin-top: 24px; margin-bottom: 12px; font-size: 1.1rem;">Battery Life</h4>
+          <p>Currently a full-size 18650 battery is giving half a day of power so with two smaller batteries this should still be able to offer long life.</p>
+
+          <h4 style="color: var(--white); margin-top: 24px; margin-bottom: 12px; font-size: 1.1rem;">Sound & Mic Integration</h4>
+          <p>There are really nice patterns that react to music really well but... flowprops are always moving and bouncing and vibrating. This can create some troubles and further calibration is needed. A phone mic could be used instead of the onboard mic to ignore the prop's internal noises.</p>
         </div>
-        <p style="margin-top:30px;">Today, it's ready. The 3-piece design gives each head its own dedicated battery and motion sensor, remaining stiff while adding portability. It's the kickass demo prop we've always wanted.</p>
+
+        <h3 style="color: var(--staff-accent); margin-top: 40px; margin-bottom: 16px; font-size: 1.5rem;">Common Concerns for Full LED Staffs</h3>
+        
+        <p><strong>Grip.</strong> Yes, clear grip is always the problem. The current clear grip works well for experienced spinners but it is the problem you'll always have if you want full length. For those who need ultimate control over ultimate LEDs: Now that it is a 3-piece design, the middle piece can be swapped for carbon fibre again with replacement goat grip if the completely full LED look is not required — with 30 LEDs each side through small polycarbonate tubes, which looks pretty cool still anyways.</p>
+
+        <p style="margin-top: 16px;"><strong>Wobble.</strong> Another common complaint with polycarbonate tube staffs is that famous wobble or flex. It'll never be as stiff as CF but with an extra long centre poly tube it is surprisingly stiffer than you'd think.</p>
+
+        <div class="prop-media" style="max-width: 600px; margin-top: 40px; margin-bottom: 40px;">
+          <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/q_auto,f_auto,vc_auto/v1773588232/CADStaff_Capsule_ji1dbw.mp4" autoplay muted loop playsinline></video>
+          <p style="padding: 15px; font-size: 0.8rem; background: #000; margin: 0; color: var(--white-dim);">Internal CAD: Redesigning the capsule for the 3-piece stiff overlap.</p>
+        </div>
+
+        <div style="background: rgba(245, 166, 35, 0.05); border: 1px solid rgba(245, 166, 35, 0.2); padding: 30px; border-radius: 16px; margin-top: 40px; text-align: center;">
+          <p style="font-size: 1.15rem; font-weight: 600; color: var(--white); margin-bottom: 16px;">These prototypes have been through a lot of abuse and redesigned to address the issues.</p>
+          <p style="color: var(--white-dim);">Since this is low volume, I'll be able to stay in contact for custom specs or adjustments to give you a real personal prop before they get locked in to my preference on full production runs.</p>
+          <a href="index.html#campaign" class="btn btn--primary" style="margin-top: 24px;">Join In</a>
+        </div>
+
       </div>
     </div>
   </section>

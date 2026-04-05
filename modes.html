@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
       padding: 100px 0 40px;
       text-align: center;
       background: radial-gradient(circle at top, rgba(245, 166, 35, 0.05) 0%, transparent 70%);
-      border-bottom: 1px solid rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     /* --- 2-Column Layout --- */
@@ -40,6 +41,7 @@
       overflow: hidden;
       box-shadow: 0 20px 60px rgba(245, 166, 35, 0.1);
     }
+
     .perk-hero::before {
       content: '';
       position: absolute;
@@ -103,7 +105,7 @@
 
     .mode-item:hover {
       background: var(--bg-card-alt);
-      border-color: rgba(255,255,255,0.1);
+      border-color: rgba(255, 255, 255, 0.1);
       transform: translateX(5px);
     }
 
@@ -116,7 +118,7 @@
       align-items: center;
       justify-content: center;
       font-size: 2rem;
-      border: 1px solid rgba(255,255,255,0.05);
+      border: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     .mode-item__title {
@@ -158,7 +160,7 @@
       border-radius: 20px;
       overflow: hidden;
       border: 1px solid var(--border-glass);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
     }
 
     .video-card video {
@@ -169,7 +171,7 @@
     /* Web Controller Section */
     .controller-section {
       background: rgba(10, 10, 15, 0.8);
-      border-top: 1px solid rgba(255,255,255,0.05);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
       padding: 100px 0;
       margin-top: 60px;
     }
@@ -185,7 +187,7 @@
       border-radius: 30px;
       overflow: hidden;
       border: 1px solid var(--border-glass);
-      box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
     }
 
     .controller-image img {
@@ -194,13 +196,17 @@
 
     /* Responsive */
     @media (max-width: 1024px) {
-      .showcase-layout, .controller-grid {
+
+      .showcase-layout,
+      .controller-grid {
         grid-template-columns: 1fr;
       }
+
       .sticky-sidebar {
         position: static;
         order: -1;
       }
+
       .controller-grid {
         gap: 40px;
       }
@@ -213,6 +219,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <nav class="nav" id="nav">
@@ -227,22 +234,25 @@
       <span class="hero__badge" style="margin-bottom: 16px;">Motion Control v2.0</span>
       <h1 class="hero__title">Petal Logic <span>Visualizer</span></h1>
       <p style="max-width: 600px; margin: 16px auto 0; color: var(--white-dim);">
-        Our physics engine maps sensor data to every individual LED. Browse the Page 1 library and see the hardware in action.
+        Currently features 32 special movement-reactive modes and fully customizable color palettes from bluetooth app.
+        From martial arts combat sequences to fluid contact rolls, you can dial in the exact aesthetic and behavior to
+        match your flow style.
       </p>
     </div>
   </header>
 
   <main class="showcase-layout">
-    
+
     <!-- LEFT: Playlist -->
     <div class="modes-playlist">
-      
+
       <!-- FOCAL POINT: FOUNDER'S PERK -->
       <section class="perk-hero reveal">
         <span class="perk-hero__badge">Founder's Edition Bonus</span>
         <h2 class="perk-hero__title">Backer's Choice: <span>Mode 1</span></h2>
         <p class="perk-hero__desc">
-          Your custom mode, however you want it. Choose colors, behavior, whatever you'd like and <strong>be a part of all staffs in the future.</strong>
+          Your custom mode, however you want it. Choose colors, behavior, whatever you'd like and <strong>be a part of
+            all staffs in the future.</strong>
         </p>
         <a href="index.html#products" class="btn btn--primary">Claim Your Perk</a>
       </section>
@@ -253,7 +263,8 @@
         <div class="mode-item__content">
           <div class="mode-item__tag">Physics: Y-Accel Mapping</div>
           <h3 class="mode-item__title">Purple Blob</h3>
-          <p class="mode-item__desc">Cyan/White ink blob sloshing within deep purple. Driven by gravity and acceleration vectors.</p>
+          <p class="mode-item__desc">Cyan/White ink blob sloshing within deep purple. Driven by gravity and acceleration
+            vectors.</p>
         </div>
       </div>
 
@@ -263,17 +274,19 @@
         <div class="mode-item__content">
           <div class="mode-item__tag">Physics: Angular Velocity</div>
           <h3 class="mode-item__title">Vortex Overlay</h3>
-          <p class="mode-item__desc">Outward radiating sine waves that sync with spin speed. Creates a warping tunnel of light.</p>
+          <p class="mode-item__desc">Outward radiating sine waves that sync with spin speed. Creates a warping tunnel of
+            light.</p>
         </div>
       </div>
 
       <!-- MODE 04: PAINTER -->
       <div class="mode-item reveal">
-        <div class="mode-item__visual">🎨</div>
+        <div class="mode-item__visual">🌈</div>
         <div class="mode-item__content">
-          <div class="mode-item__tag">Physics: Center Mass</div>
-          <h3 class="mode-item__title">Rainbow Painter</h3>
-          <p class="mode-item__desc">A continuous color-wash that "paints" based on the speed of your hand-to-hand movements.</p>
+          <div class="mode-item__tag">Physics: Momentum & Arc</div>
+          <h3 class="mode-item__title">Rainbow Fireball</h3>
+          <p class="mode-item__desc">A shifting color-wash base. Swings launch a rainbow fireball down the staff, while
+            fast arcs suspend a persistent rainbow color-wheel in mid-air.</p>
         </div>
       </div>
 
@@ -283,7 +296,8 @@
         <div class="mode-item__content">
           <div class="mode-item__tag">Physics: G-Force Impact</div>
           <h3 class="mode-item__title">Rainbow Crush</h3>
-          <p class="mode-item__desc">Bands compress tightly on sharp stops, then decompress and flow outwards as you resume.</p>
+          <p class="mode-item__desc">Bands compress tightly on sharp stops, then decompress and flow outwards as you
+            resume.</p>
         </div>
       </div>
 
@@ -292,7 +306,8 @@
         <div class="mode-item__visual">🔥</div>
         <div class="mode-item__content">
           <h3 class="mode-item__title">Climate Range (Fire / Water / Forest)</h3>
-          <p class="mode-item__desc">Heat sims, fluid tides, and wander sprites (Fairies). 9 distinct environmental algorithms mapped to tilt and roll.</p>
+          <p class="mode-item__desc">Heat sims, fluid tides, and wander sprites (Fairies). 9 distinct environmental
+            algorithms mapped to tilt and roll.</p>
         </div>
       </div>
 
@@ -300,7 +315,8 @@
         <div class="mode-item__visual">🏓</div>
         <div class="mode-item__content">
           <h3 class="mode-item__title">Technical (Ping Pong / Strobe)</h3>
-          <p class="mode-item__desc">Pure white balls bouncing between heads and dual-state fire/fairies roll-detection logic.</p>
+          <p class="mode-item__desc">Pure white balls bouncing between heads and dual-state fire/fairies roll-detection
+            logic.</p>
         </div>
       </div>
 
@@ -309,12 +325,15 @@
     <!-- RIGHT: Sticky Sidebar -->
     <aside class="sticky-sidebar">
       <div class="video-card">
-        <p style="padding: 12px; font-size: 0.7rem; text-transform: uppercase; color: var(--accent); font-weight: 700;">Live Hardware Feed</p>
-        <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/f_auto,q_auto/v1/PETALSTAFFmodes" autoplay muted loop playsinline></video>
+        <p style="padding: 12px; font-size: 0.7rem; text-transform: uppercase; color: var(--accent); font-weight: 700;">
+          Live Hardware Feed</p>
+        <video src="https://res.cloudinary.com/dfz5m8dzp/video/upload/q_auto,f_auto,vc_auto/v1/PETALSTAFFmodes" autoplay
+          muted loop playsinline></video>
       </div>
       <div class="sidebar-info" style="border-top: 3px solid var(--accent);">
         <h4>The "Mode 1" Legacy</h4>
-        <p>Your custom mode isn't just a preset. It's a bespoke piece of code that will be hardcoded into the production firmware of every Petal Staff shipped in the future.</p>
+        <p>Your custom mode isn't just a preset. It's a bespoke piece of code that will be hardcoded into the production
+          firmware of every Petal Staff shipped in the future.</p>
       </div>
     </aside>
 
@@ -325,13 +344,15 @@
     <div class="container">
       <div class="controller-grid">
         <div class="controller-image reveal">
-          <img src="https://res.cloudinary.com/dfz5m8dzp/image/upload/v1773511779/unnamed.jpg" alt="Petal Flow Web Controller">
+          <img src="https://res.cloudinary.com/dfz5m8dzp/image/upload/q_auto,f_auto/v1773511779/unnamed.jpg"
+            alt="Petal Flow Web Controller">
         </div>
         <div class="controller-content reveal">
           <span class="hero__badge">Tech Stack</span>
           <h2 class="hero__title" style="font-size: 3rem;">Web-Powered <span>Control</span></h2>
           <p class="hero__desc" style="margin: 24px 0;">
-            No app store required. Connect via Bluetooth Low Energy directly from your browser. Adjust sensitivity, color palettes, and motion thresholds in real time.
+            No app store required. Connect via Bluetooth Low Energy directly from your browser. Adjust sensitivity,
+            color palettes, and motion thresholds in real time.
           </p>
           <ul style="list-style: none;">
             <li class="check-item" style="display: flex; gap: 12px; margin-bottom: 12px; font-weight: 600;">
@@ -365,4 +386,5 @@
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
+
 </html>
